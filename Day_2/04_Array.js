@@ -26,3 +26,5 @@ console.log(typeof newArray) //type after join was switch to string
 // checkout the method which was slice and splice 
 // in the slice we can see if we have give range 1,3 => 1,2
 // in the splice we can see if we have give range 1,4 => 1,2,3,4
+
+
