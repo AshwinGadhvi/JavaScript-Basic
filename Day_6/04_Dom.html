@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: black;color:white;">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName){
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`;
+        const ul = document.querySelector('.language');
+        ul.appendChild(li);  // this is mine code
+        // appendChild(ul);
+    }
+    addLanguage('CPP');
+    addLanguage('Java');
+    addLanguage('ruby');
+    function addOpti(langName){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li);
+    }
+
+    addOpti("GO LANG");
+    addOpti("BRO");
+
+    //Edit
+    const two = document.querySelector('li:nth-child(2)');
+    const newLi = document.createElement('li');
+    newLi.textContent = "Mojo";
+    two.replaceWith(newLi);
+
+    const first = document.querySelector('li:first-child');
+    first.outerHTML = "<li>TypeSCript</li>";
+
+    //remove
+
+    const last = document.querySelector('li:last-child');
+    last.remove()
+</script>
+</html>
