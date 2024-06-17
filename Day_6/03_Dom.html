@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black;color: white;">
+    
+</body>
+<script>
+    const div = document.createElement('div');
+    console.log(div);
+    div.className = "Main"
+    div.id = "MyID"
+    div.setAttribute("title","generate title")
+    div.style.backgroundColor = "green"
+    div.style.padding = "12px"
+    // div.innerText = "Ashwin Gadhvi"
+    const addText = document.createTextNode("Ashwin Gadhvi")
+    div.appendChild(addText)
+
+    document.body.appendChild(div)
+    function AddChild(){
+        const ClassNames = ['Main 1','Main 2','Main 3','Main 4','Main 5']
+        const ClassColors = ['red','green','yellow','blue','pink']
+        ClassNames.forEach((element) => {
+
+            ClassColors.forEach((ele)=>{
+                const div = document.createElement('div');
+            div.className = `${element}`;
+            div.id = Math.round(Math.random *10 +1)
+                div.style.backgroundColor = `${ele}`;
+                div.style.padding = "12px"
+    // div.innerText = "Ashwin Gadhvi"
+        const addText = document.createTextNode("Ashwin Gadhvi")
+        div.appendChild(addText)
+
+        document.body.appendChild(div)
+        });
+            })
+           
+    }
+    AddChild();
+</script>
+</html>
