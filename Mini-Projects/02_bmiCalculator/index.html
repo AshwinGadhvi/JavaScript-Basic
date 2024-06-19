@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mini-Projects</title>
+</head>
+<body>
+    <nav class="nav-bar">
+        <a id="Home" class="btn" href="../index.html">Home</a>
+        <a id="Random" class="btn">Random</a>
+    </nav>
+    <hr>
+    <h1 id="title">Made By Ashwin Gadhvi</h1>
+    <div class="container">
+        <div class="main">
+            <form>
+                <p><label style="margin-left:60px;margin-right: 10px;">Height in CM: </label><input type="text" id="height" /></p>
+                <p><label style="margin-left:60px;margin-right: 10px;">Weight in KG: </label><input type="text" id="weight" /></p>
+                <button>Calculate</button>
+                <div id="results"></div>
+                <div id="weight-guide">
+                  <h3>BMI Weight Guide</h3><br>
+                  <p>Under Weight = Less than 18.6</p>
+                  <p>Normal Range = 18.6 and 24.9</p>
+                  <p>Overweight = Greater than 24.9</p>
+                </div>
+              </form>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
