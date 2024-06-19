@@ -44,7 +44,94 @@ body{
     display: flex;
     justify-content: center;
     color:white;
-    margin: 20px;
+    margin: 20px;*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family:  Calibri, 'Trebuchet MS', sans-serif;
+    }
+    body{
+        background-color: #212121;
+        width:100%;
+        overflow:hidden;
+    }
+    .nav-bar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .btn{
+        width: 250px;
+        border: 2px solid white;
+        height: 40px;
+        border-radius: 10px;
+        border-color: white;
+        background-color: transparent;
+        color: white;
+        margin: 20px;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 7px;
+        text-decoration: none;
+    }
+    .main{
+            width: 500px;
+            height: 700px;
+            /* background-color: red; */
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+    }
+    .container {
+        display: grid;
+        place-items: center;
+        height: 100vh;
+    }
+    #title{
+        display: flex;
+        justify-content: center;
+        color:white;
+        margin: 20px;
+    }
+    .project-link{
+        border: 2px solid white;
+        width: 100%;
+        margin: 10px;
+        border: 2px solid grey;
+        height:40px;
+        border-radius: 10px;
+        background-color: white;
+        color:#212121;
+        font-weight: bold;
+        text-decoration: none;
+        padding-left: 25px; 
+        padding-top: 7px;
+    }
+    
+    .button{
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+    }
+    
+    #red{
+        background-color: red;
+    }
+    #green{
+        background-color: green;
+    }
+    #blue{
+        background-color: blue;
+    }
+    #yellow{
+        background-color: yellow;
+    }
+    
+    
 }
 .project-link{
     border: 2px solid white;

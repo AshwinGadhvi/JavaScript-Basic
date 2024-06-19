@@ -3,7 +3,7 @@ const body = document.querySelector('body');
 console.log(button);
 
 button.forEach((item)=>{
-    item.addEventListener("click",function op(e){
+    item.addEventListener("click",function (e){
         if (e.target.id === 'blue')
         {
             body.style.backgroundColor = e.target.id;
@@ -22,3 +22,10 @@ button.forEach((item)=>{
         }
     });
 });
+
+
+const home = document.querySelector('#Home');
+
+home.addEventListener('click',()=>{
+    window.location.href = "../index.html";
+})
